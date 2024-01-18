@@ -22,7 +22,7 @@ class Subject {
         subjects.forEach((subject, index) => {
           const listItem = document.createElement('li');
           listItem.textContent = `Subject ${index + 1}: ${subject.name}`;
-          schoolList.appendChild(listItem);
+          subjectList.appendChild(listItem);
         });
       }
 
