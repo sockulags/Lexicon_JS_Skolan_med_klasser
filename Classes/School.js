@@ -14,7 +14,7 @@ class School {
       const city = document.getElementById('city').value;
   
       const newSchool = new School(name, zipcode, city);  
-      this.schools.push(newSchool);
+      schools.push(newSchool);
   
       console.log('New School:', newSchool);
   
@@ -27,7 +27,7 @@ class School {
       const schoolList = document.getElementById('schoolList');
       schoolList.innerHTML = '';
   
-      this.schools.forEach((school, index) => {
+      schools.forEach((school, index) => {
         const listItem = document.createElement('li');
         listItem.textContent = `School ${index + 1}: ${school.name}, ${school.city}`;
         schoolList.appendChild(listItem);
@@ -40,6 +40,8 @@ class School {
       document.getElementById('city').value = '';
     }
   }
+
+  const schools = [];
   
 export default School;
   

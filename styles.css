@@ -55,8 +55,6 @@ header h1{
     
 }
 
-
-
   h1, h2 {
     color: #333;
     margin: 0;
@@ -124,20 +122,20 @@ header h1{
     color: #333;
   }
 
-  #closeSchoolForm{
+  .close-form-btn{
     display: none;
   }
 
-  #closeSchoolForm,
-  #openSchoolForm{
+  .close-form-btn,
+  .open-form-btn{
     position: relative;
     font-size: 28px;  
     top: 5px;
   }
 
 
-  #closeSchoolForm:hover,
-  #openSchoolForm:hover{
+  .close-form-btn:hover,
+  .open-form-btn:hover{
     color: #8f8f8f;   
     cursor: pointer;
   }
@@ -163,4 +161,13 @@ header h1{
     color: rgb(255, 94, 0);
     background-color: #f4f4f4;
     font-family: 'Courier New', monospace;  
+}
+
+
+#solution{
+    display: none;
+}
+
+#instructions{
+    display: none;
 }
