@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <header>
+<h1>School with classes</h1>
+    </header>
+    <nav>
+        <a id="everythingSchool">Schools</a>
+        <a id="everythingStudents">Students</a>
+        <a id="everythingTeachers">Teachers</a>
+        <a id="everythingSubjects">Subjects</a>
+    </nav>
+
+    <h1>Tasks:</h1>
+
+    <h2>1. Create a School class:</h2>
+    <pre>
+    <span class="code">
+        <span style="color: #008080;">class</span> School {
+          <span style="color: #008080;">constructor</span>(name) {
+            <span style="color: #008000;">this</span>.name = name;
+            <span style="color: #008000;">this</span>.students = [];
+            <span style="color: #008000;">this</span>.teachers = [];
+            <span style="color: #696969;">// other properties...</span>
+          }
+        }
+      </span>
+    </pre>
+    <h2>2. Create a Subject class:</h2>
+    <pre>
+        <span class="code">
+        <span style="color: #008080;"> class</span> Subject {
+            <span style="color: #696969;"> // code...</span>
+      }
+    </span>
+    </pre>
+  
+    <h2>3. Create a Student class:</h2>
+    <pre>
+        <span class="code">
+        <span style="color: #008080;"> class</span> Student {
+            <span style="color: #696969;"> // code...</span>
+      }
+    </span>
+    </pre>
+    <h2>4. Create a Teacher class:</h2>
+    <pre>
+        <span class="code">
+        <span style="color: #008080;"> class</span> Teacher {
+            <span style="color: #696969;"> // code...</span>
+      }
+    </span>
+    </pre>
+    <h2>5. Create instances:</h2>
+    <p>Create instances of <span class="inline-code">School</span>, three instances of <span class="inline-code">Subject</span>, five instances of <span class="inline-code">Student</span>, and two instances of <span class="inline-code">Teacher</span>. Be creative with variable names.</p>
+    
+    <h2>6. Add a subject to a teacher's array:</h2>
+    <p>Use <span class="inline-code">push()</span> or <span class="inline-code">unshift()</span> to add a subject to a teacher's array. Print both the teacher and the subject in the console.</p>
+    
+    <h2>7. Add a student to a subject's student array:</h2>
+    <p>Solve the issue by adding a reference on both sides (circular reference). Create a function <span class="inline-code">addSubjectToTeacher</span> to establish this connection.</p>
+    
+    <h2>8. Create and explain methods:</h2>
+    <p>Create and place methods <span class="inline-code">addTeacher</span>, <span class="inline-code">enlistToSubject</span>, <span class="inline-code">addStudent</span>, and <span class="inline-code">addSubject</span> in the appropriate classes.</p>
+    
+    <h2>9. Explore and test methods:</h2>
+    <p>Play around with the methods in the console, adding and removing instances.</p>
+    
+    <h2>10. Additional methods:</h2>
+    <p>Create methods like <span class="inline-code">quitSubject</span>, <span class="inline-code">removeTeacher</span>, <span class="inline-code">relegateStudent</span>, and <span class="inline-code">fireTeacher</span>. Consider handling connections between classes properly.</p>
+    
+    <h2>11. Logical connections:</h2>
+    <p>Implement logic at the end of the script file to connect students to the school, subjects to students, and teachers to subjects.</p>
+    
+    <h2>12. Display functions:</h2>
+    <p>Create a standalone function <span class="inline-code">displayAllStudents</span> to loop through all students in the school and print their details.</p>
+    
+    <h2>13. More display functions:</h2>
+    <p>Create functions like <span class="inline-code">displayAllSubjectsOfStudent</span>, <span class="inline-code">displayAllStudentsEnlistedToSubject</span>, and <span class="inline-code">displayAllTeachers</span>.</p>
+    
+    <h2>14.Introduce a Grade class:</h2>
+    <p>Add a new class for grades with appropriate variables and methods. Consider relationships with other classes.</p>
+    
+    <h2>15. Experiment and inspect:</h2>
+    <p>Play around with the new class and its methods in the console.</p>
+
+    <h2>
+      New School  <span id="openSchoolForm" class="material-symbols-outlined"> add_circle </span><span id="closeSchoolForm" class="material-symbols-outlined">
+        cancel
+        </span>
+    </h2>
+
+    <form id="schoolForm">     
+      <label for="schoolName">School Name:</label>
+      <input type="text" id="schoolName" required />
+
+      <label for="zipcode">Zipcode:</label>
+      <input type="text" id="zipcode" required />
+
+      <label for="city">City:</label>
+      <input type="text" id="city" required />
+
+      <button id="createSchoolBtn">Create School</button>
+    </form>
+
+    <h2 id="allSchoolsHeading">All Schools</h2>
+    <ul id="schoolList"></ul>
+    <script src="index.js" type="module"></script>
+    <script>
+
+    </script>
+
+  </body>
+</html>
