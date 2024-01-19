@@ -8,7 +8,7 @@ class School {
       this.subjects = [];
     }
   
-    createSchool() {     
+    create() {     
       const name = document.getElementById('schoolName').value;
       const zipcode = document.getElementById('zipcode').value;
       const city = document.getElementById('city').value;

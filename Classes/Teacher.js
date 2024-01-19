@@ -4,7 +4,7 @@ class Teacher {
       this.subjects = [];
     }
 
-    createTeacher() {     
+    create() {     
         const name = document.getElementById('teacherName').value;    
         const newTeacher = new Teacher(name); 
         teachers.push(newTeacher);

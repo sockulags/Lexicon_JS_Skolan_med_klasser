@@ -80,7 +80,6 @@ header h1{
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    display: none;
   }
 
   label {
@@ -120,10 +119,6 @@ header h1{
   li {
     margin-bottom: 10px;
     color: #333;
-  }
-
-  .close-form-btn{
-    display: none;
   }
 
   .close-form-btn,
@@ -170,4 +165,8 @@ header h1{
 
 #instructions{
     display: none;
+}
+
+.hider{
+    display:none;
 }

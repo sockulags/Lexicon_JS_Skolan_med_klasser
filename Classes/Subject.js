@@ -4,7 +4,7 @@ class Subject {
       this.teacher = {};
     }
 
-    createSubject() {     
+    create() {     
         const name = document.getElementById('subjectName').value;    
         const newSubject = new Subject(name); 
         subjects.push(newSubject);

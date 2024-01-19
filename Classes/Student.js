@@ -6,7 +6,7 @@ class Student {
       this.subjects = [];
     }
 
-    createStudent() {     
+    create() {     
         const name = document.getElementById('studentName').value;
         const age = document.getElementById('age').value;
         const gender = document.getElementById('gender').value;
